@@ -1,12 +1,10 @@
 # Named Entity Recognition (NER): A Window into Semantic Categorization
 
-A class project exploring **Named Entity Recognition** as a computational lens on cognitive science — mapping how machines (and humans) segment, label, and associate meaningful chunks of language.
-
 ---
 
 ## Overview
 
-This project develops an NER system using **spaCy** that recognizes and classifies named entities (persons, organizations, locations, dates, and more) in text data. Beyond basic recognition, it models the **associations and context** between entities — connecting NLP techniques to theories from cognitive science such as spreading-activation memory networks, referential accessibility, and top-down lexical priming.
+This project develops an NER system using **spaCy** that recognizes and classifies named entities (persons, organizations, locations, dates, and more) in text data. Beyond basic recognition, it models the **associations and context** between entities - connecting NLP techniques to theories from cognitive science such as spreading-activation memory networks, referential accessibility, and top-down lexical priming.
 
 ---
 
@@ -35,12 +33,12 @@ README.md               ← This file
 ## Features
 
 - **Entity extraction** with character offsets, sentence context, and position salience ratio
-- **Corpus-level analysis** — type distribution bar chart + entity × sentence heatmap
-- **Evaluation** — token-level IO classification report and span-level exact-match F1 (CoNLL standard)
-- **Custom domain lexicon** — `COGSCI_BRAIN`, `COGSCI_PROCESS`, `COGSCI_DISORDER` labels via spaCy `EntityRuler` with case-insensitive token-pattern rules
-- **Error taxonomy** — structured `correct / false_positive / false_negative / type_error` table with colour coding
-- **Co-occurrence graph** — weighted NetworkX graph revealing hub concepts and associative structure
-- **Discourse timeline** — Gantt-style entity mention map tracking prominence across a document
+- **Corpus-level analysis** - type distribution bar chart + entity × sentence heatmap
+- **Evaluation** - token-level IO classification report and span-level exact-match F1 (CoNLL standard)
+- **Custom domain lexicon** - `COGSCI_BRAIN`, `COGSCI_PROCESS`, `COGSCI_DISORDER` labels via spaCy `EntityRuler` with case-insensitive token-pattern rules
+- **Error taxonomy** - structured `correct / false_positive / false_negative / type_error` table with colour coding
+- **Co-occurrence graph** - weighted NetworkX graph revealing hub concepts and associative structure
+- **Discourse timeline** - Gantt-style entity mention map tracking prominence across a document
 
 ---
 
@@ -70,7 +68,7 @@ python -m spacy download en_core_web_sm
 
 - The base `en_core_web_sm` model correctly identifies standard entities (persons, locations, organizations) but misses domain-specific cognitive science terminology.
 - Adding `EntityRuler` patterns introduces `COGSCI_BRAIN`, `COGSCI_PROCESS`, and `COGSCI_DISORDER` labels, improving coverage on neuroscience text.
-- The entity co-occurrence graph exposes associative relationships between named entities across sentences — directly modelling the "context and associations" goal of the project.
+- The entity co-occurrence graph exposes associative relationships between named entities across sentences - directly modelling the "context and associations" goal of the project.
 - Span-level exact-match F1 provides a stricter and more realistic benchmark than token-level accuracy alone.
 
 ---
