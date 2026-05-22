@@ -12,7 +12,7 @@ This project develops an NER system using **spaCy** that recognizes and classifi
 
 ```
 NamedEntityRecognition_demo.ipynb       ← Main notebook (all sections)
-README.md               ← This file
+README.md                               ← This file
 ```
 
 ### Notebook Sections
